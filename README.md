@@ -1,40 +1,91 @@
-# AirBnB clone
+<p align="center">
+  <img width="384" height="162" src="https://camo.githubusercontent.com/9ebbf60e208b031d4dcf7db6ffc19fe0339d0ff3/68747470733a2f2f692e6962622e636f2f64354e38354e682f68626e622e706e67">
+</p>
 
-## Description:
-* This project is a clone of the AirBnB webpage.
+---
+# <span style="color:#dd4646">**AirBnB clone**</span>
+* This project is the first part of a clone of the AirBnB web.
 * This includes a console that creates, destroys, updates and shows instances of different elements.
+---
+### <span style="color:#dd4646">**Getting Started:**</span>
+---
+* Clone this repo.
+* Open terminal from cloned folder path.
 
-### Console execution:
-In order to execute the console write in a terminal `./console`
+**To execute the program, you can either execute it in the interactive mode:**
 
-### List of commands:
-* `help`: Shows a list of commands. In case of writing `help <command>` it will print a description of the command
+>Typing `./console.py` from the terminal:
 
-* `quit`:
-* Exits the console
+```
+$ ./console.py
+(hbnb) help
 
-* `EOF/Ctrl+D`:
-* Exits the console
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
 
-* `create`:
-* Creates a new element.
-* Usage: `create <class_name>`. Also prints the id of the element created.
+(hbnb) 
+(hbnb) 
+(hbnb) quit
+$
+```
+**And also in the non-interacvtive mode:**
+>(example) `echo "help" | ./console.py`:
+```
+$ echo "help" | ./console.py
+(hbnb)
 
-* `show`:
-* Prints the string representation of an element.
-* Usage: `show <class_name> <element_id>`
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
 
-* `destroy`:
-* Deletes an element.
-* Usage: `destroy <class_name> <element_id>`
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+```
+---
+### <span style="color:#dd4646">**List of commands:**</span>
+---
+>`help`:
+  * Shows a list of commands. In case of writing `help <command>` it will print a description of the command
 
-* `all`: Prints string representation of all elements, or in case of adding the class name it will print all elements based on it
-* Usage: `all` or `all <class_name>`
+>`create`:
+  * Creates a new element.
+  * Usage: `create <class_name>`. Also prints the id of the element created.
 
-* `update`: Updates or adds attributes to the given element.
-* Usage: `update <class_name> <element_id> <attribute_name> "<attribute_value>"`
+>`show`:
+  * Prints the string representation of an element.
+  * Usage: `show <class_name> <element_id>`
 
-### Examples:
+>`destroy`
+  * Deletes an element.
+  * Usage: `destroy <class_name> <element_id>`
+
+>`all`:
+  * Prints string representation of all elements, or in case of adding the class name it will print all elements based on it
+  * Usage: `all` or `all <class_name>`
+
+>`update`: Updates or adds attributes to the given element.
+  * Usage: `update <class_name> <element_id> <attribute_name> "<attribute_value>"`
+ ---
+>`quit`:
+  * Exits the console
+
+>`EOF`/`Ctrl+D`:
+  * Exits the console
+
+---
+### <span style="color:#dd4646">**Examples**:</span>
+---
 ```
 (hbnb) help
 
@@ -70,6 +121,24 @@ b0a79339-8b0c-4827-9c46-04a051cbd5c5
 ["[BaseModel] (45aefd37-695f-428e-adaa-1e046d87d192) {'id': '45aefd37-695f-428e-adaa-1e046d87d192', 'created_at': datetime.datetime(2021, 2, 18, 20, 47, 2, 157250), 'updated_at': datetime.datetime(2021, 2, 18, 20, 47, 2, 158015), 'name': 'Pepocho'}"]
 ```
 
-#### Authors:
+---
+### <span style="color:#dd4646">**Testing**:</span>
+---
+There are some test in the repo that can be ran with the following command:
+>`python3 -m unittest discover tests`
+```
+guillaume@ubuntu:~/AirBnB$ python3 -m unittest discover tests
+...................................................................................
+...................................................................................
+.......................
+----------------------------------------------------------------------
+Ran 198 tests in 2.342s
+
+OK
+guillaume@ubuntu:~/AirBnB$
+```
+---
+### <span style="color:#dd4646">**Authors**:</span>
+---
 * Ezequiel Martinez
 * Hugo Gomez

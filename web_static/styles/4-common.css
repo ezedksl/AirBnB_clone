@@ -10,4 +10,8 @@ body div.container {
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
 }

@@ -34,8 +34,8 @@ body div.container section.filters div.locations h3,
 body div.container section.filters div.amenities h3 {
     font-weight: 600;
     margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 14px;
+    padding-bottom: 6px;
 }
 body div.container section.filters div.locations h4,
 body div.container section.filters div.amenities h4 {
